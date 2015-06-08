@@ -1,0 +1,173 @@
+/**
+ * UpAndAway
+ * Demo styles
+ */
+
+
+/**
+ * UpAndAway styles
+ */
+
+
+/* site header (the container of the nav element more specifically) needs height defined so that when the element becomes fixedthe page doesnt change size */
+.site-header{
+    height: 50px;
+    margin-bottom: 24px;
+}
+
+ .nav{ 
+     border-bottom: 1px solid #ccc;
+ }
+
+    .nav--hidden{
+        opacity: 0;
+        margin-top: -50px; //same as nav container height
+    }
+
+
+    .nav--show{
+        /* Functional Styles */
+        width: 100%;
+        display: block;
+        position: fixed;
+        z-index: 100000;
+        /* transition controls - (how it slides in) */
+        transition: opacity 0.5s linear 0s, margin-top 0.75s linear 0s;
+        opacity: 1;
+        margin-top: 0; 
+        /* cosmetic styles */
+        padding: 10px 0; 
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+    } 
+
+/**
+ * Generic page styles that you really don't need to include at all.
+ */
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Clearfix */
+.clear:before,
+.clear:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+/* wrapper */
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media(min-width: 800px){
+    .wrapper{
+        width: 90%;
+        max-width: 800px;
+    }
+}
+
+
+/* Text Styles */
+
+html{
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: georgia, times, serif;
+}
+
+h1,h2,h3{
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 24px;
+} 
+
+    p:last-child{
+        margin: 0;
+    }
+
+ul,ol { 
+    font-size: 16px;   
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+a{
+    color: #0d64cf;
+}
+
+/* Header */
+
+.nav__logo{
+    float: left;
+    font-size: 30px;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nav__items{
+    float: right;
+}
+
+/* Menu styling */
+
+.main-menu{
+    margin: 0;
+    list-style: none;
+}
+
+    .main-menu__item{
+        position: relative;
+        float: left;
+        font-size: 16px;
+    }
+
+        .main-menu__item a{
+            display: block;
+            margin: 0 6px;
+            padding: 11px 0;
+        }
+
+/* instructions */ 
+
+.instructions{
+    background: #f6f6f6;
+    border: 1px solid #e0e0e0;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+    .instructions p{
+        font-size: 18px;
+    }
+
