@@ -22,6 +22,7 @@
     .nav--hidden{
         opacity: 0;
         margin-top: -50px; //same as nav container height
+        transition: opacity 0.5s linear 0s, margin-top 0.75s linear 0s;
     }
 
 
